@@ -1,6 +1,8 @@
+
 import React, { useRef, useState, useEffect } from "react";
 import { Form, Button, Card, Alert, Container } from "react-bootstrap";
 import { useAuth } from "../AuthContexts";
+import Google from "../assets/Google.png"
 import { Link, useNavigate } from "react-router-dom";
 
 export function Signup() {
@@ -109,7 +111,8 @@ export function Signup() {
                 className="w-100 mt-3 "
                 onClick={signInWithGoogle}
               >
-                <img style={{ height: "25px", marginRight: "8px" }} src="../Google.png" alt="" />
+               
+                <img style={{ height: "25px", marginRight: "8px" }} src={Google} alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cleanpng.com%2Fpng-google-logo-2280160%2F&psig=AOvVaw2SrudD0QMZZfGLOXZBPoQv&ust=1706530819285000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKiU9veIgIQDFQAAAAAdAAAAABAD" />
                 SignUp With Google
               </Button>
             </Form>

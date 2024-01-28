@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Form, Button, Card, Alert, Container } from "react-bootstrap";
 import { useAuth } from "../AuthContexts";
+import Google from "../assets/Google.png"
 import { Link, useNavigate } from "react-router-dom";
 
 export function Login() {
@@ -93,7 +94,7 @@ export function Login() {
                 className="w-100 mt-3"
                 onClick={signInWithGoogle}
               >
-                <img style={{ height:"25px",marginRight:"8px" }} src="../Google.png" alt="" />
+                <img style={{ height:"25px",marginRight:"8px" }} src={Google} alt="" />
                 Sign In With Google
               </Button>
           </Card.Body>

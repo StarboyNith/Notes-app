@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Sidebar from "./Sidebar";
 import Editor from "./Editor";
+import Profile from "../assets/profile.png"
 import Split from "react-split";
 import {
   onSnapshot,
@@ -201,7 +202,7 @@ export default function Dashboard() {
           {/* navbar */}
           {navVisible && (
   <nav className="nav-bar" style={{ border: "none" }}>
-    <img className="nav-profile-icon" src="../profile.png" alt="" />
+    <img className="nav-profile-icon" src={Profile} alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dprofile&psig=AOvVaw1tXgy5UnieKRBv1NLaddcR&ust=1706531046720000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJjDsuGJgIQDFQAAAAAdAAAAABAD" />
     <h6 className="user-name">{currentUser?.email}</h6>
     <button className="update-btn" onClick={() => console.log("Button clicked")}>
   Update Profile
@@ -219,7 +220,7 @@ export default function Dashboard() {
          
 
           <button className="profile" onClick={toogleNavbar}>
-            <img className="new-pro-icon" src="../profile.png" alt="" />
+            <img className="new-pro-icon" src={Profile} alt="" />
           </button>
           <h1>You have no notes</h1>
           <button className="first-note" onClick={createCollection}>

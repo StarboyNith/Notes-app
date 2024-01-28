@@ -3,5 +3,9 @@ import react from '@vitejs/plugin-react'
 import envCompatible from 'vite-plugin-env-compatible'
 export default defineConfig({
 	plugins: [react(),
-	envCompatible()]	
+	envCompatible()],
+	optimizeDeps:{
+		include:['react','react-dom'],
+	},
+	
 })
